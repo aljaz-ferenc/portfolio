@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  color: #444;
+  font-family: "Dosis", sans-serif;
+  padding: 2rem;
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.grid-width {
+  max-width: 90%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");

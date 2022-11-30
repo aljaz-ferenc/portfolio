@@ -1,0 +1,15 @@
+.tools {
+  &__header {
+    margin-bottom: 5rem;
+  }
+  ul {
+    display: flex;
+    gap: 5%;
+    li {
+      list-style: none;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}

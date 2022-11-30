@@ -1,0 +1,10 @@
+@mixin grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}

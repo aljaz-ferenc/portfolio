@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My personal frontend portfolio site." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Great+Vibes&family=Montserrat+Subrayada:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Aljaž Ferenc - Portfolio page</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="">About Me</a></li>
+        <li><a href="">My Work</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__about">
+          <h1>Aljaž Ferenc</h1>
+          <h2>Front End Developer</h2>
+          <p>
+            Hello and welcome to my page! My name is Aljaž and I am a
+            self-taught front end developer. I have a master's degree in guitar,
+            experience working as a guitar teacher, but now I would like to
+            change my career path towards my newly discovered passion: front end
+            web development. I enjoy learning new programming skills that allow
+            me to build better and better projects, I am motivated and I strive
+            to improve every day. My other interests include music, astronomy
+            and photography.
+          </p>
+          <p>Check out some of my work below &darr;</p>
+        </div>
+        <!-- <div class="hero__image">
+                <img src="/images/hero/werData_Analystic_01_generated.jpg" alt="">
+            </div> -->
+      </section>
+      <section class="work container">
+        <article>
+          <div class="work__text">
+            <h3 class="work__text--header">Wise Tracker</h3>
+            <p class="work__text--description">
+              Wise Tracker is an app that allows users to track their personal
+              finances and cryptocurrency investments.
+            </p>
+            <div class="how-it-works">
+              <p>
+                <strong>EXPENSE TRACKER</strong>: The user can input their
+                monthly income and expenses. The app renders that data on the
+                page and saves it in local storage. A budget is created and
+                updated anytime the user adds or removes a transaction. The
+                budget is visualized using Charts.js library.
+              </p>
+              <p>
+                <strong>ENVELOPES</strong>: Based on envelope saving system,
+                traditionally using physical envelopes and cash, the user can
+                create virtual envelopes and add money anytime to save up for a
+                specific expense.
+              </p>
+              <p>
+                <strong>CRYPTO TRACKER</strong>: The user can add and track
+                their cryptocurrency orders. Anytime a buy or sell order is
+                added, the app will fetch the current price via Coin Gecko's API
+                and calculate the order amount. The cryptocurrency is added to
+                the user's holdings and the portfolio amount is updated.
+                Autocomplete functionality is created from scratch using the API
+                data.
+              </p>
+              <p>
+                <strong>CHARTS</strong>: The user can add assets to their
+                watchlist, which will display the asset's chart. The charts are
+                made using the Chart.js library and created dynamically by
+                fetching the last 30 days of price data from the Coin Gecko API.
+                Data from the same API is also used to dynamically create the
+                list of available assets, their logos and symbols.
+              </p>
+            </div>
+            <div class="try-it-live">
+              <div>
+                <p>live page</p>
+                <a target="_blank" href="https://wise-tracker-af.netlify.app"
+                  ><img src="./images/icons/netlify.svg" alt=""
+                /></a>
+              </div>
+              <div>
+                <p>code</p>
+                <a
+                  target="_blank"
+                  href="https://github.com/aljaz-ferenc/wise-tracker"
+                  ><img
+                    src="./images/icons/github-original-wordmark.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="work__image">
+            <img src="./images/responsive/wisetracker3770.png" alt="" />
+          </div>
+        </article>
+        <article>
+          <div class="work__text">
+            <h3 class="work__text--header">Ear Trainer</h3>
+            <p class="work__text--description">
+              Ear Trainer is an app designed for my fellow musicians, helping
+              them to practice the most common type of ear training exercises
+              used in formal music education.
+            </p>
+            <div class="how-it-works">
+              <p>
+                The app has two types of exercises: listening and singing. The
+                user can choose chords, intervals or scales they want to
+                practice.
+              </p>
+              <p>
+                <strong>LISTENING</strong>: In the listening section the app
+                will play a chord, interval, or scale and the users job is to
+                recognize what is being played.
+              </p>
+              <p>
+                <strong>SINGING</strong>: In the singing section the user gets a
+                starting note and has to correctly sing the requested chord,
+                interval, or scale.
+              </p>
+              <p>
+                The program is given an array of notes. Classes are used to
+                define distances between notes of every chord, interval and
+                scale so the program can build any of them from any note. The
+                app chooses a random chord, interval or scale and builds it on a
+                randomly selected note. I used the Tone.js library to play the
+                notes either all together or one by one. The app is built as a
+                single page application by dispalying only the neccessary parts
+                and hiding the rest. I also used JavaScript modules to make code
+                more organized and reusable.
+              </p>
+            </div>
+            <div class="try-it-live">
+              <div>
+                <p>live page</p>
+                <a target="_blank" href="https://ear-trainer-af.netlify.app"
+                  ><img src="./images/icons/netlify.svg" alt=""
+                /></a>
+              </div>
+              <div>
+                <p>code</p>
+                <a
+                  target="_blank"
+                  href="https://github.com/aljaz-ferenc/ear-trainer"
+                  ><img
+                  src="./images/icons/github-original-wordmark.svg"
+                  alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="work__image">
+            <img src="./images/responsive/eartrainer3770.png" alt="" />
+          </div>
+        </article>
+        <article>
+          <div class="work__text">
+            <h3>Space Missions</h3>
+            <p>
+              Space Missions is a webpage that contains information about the
+              most important missions to outer space.
+            </p>
+            <div class="how-it-works">
+              <p>
+                Space Missions is a webpage that contains information about the
+                most important missions to outer space.
+              </p>
+              <p>
+                The page is focused aroung using <strong>GSAP</strong> animation
+                library. The first part displays a photo of a chosen space
+                mission and information about it. Animations include hovering
+                satelite, rotating planet, text being typed out letter by
+                letter, random shooting stars and parallax effect on the
+                background when the mouse is moved. The background was created
+                using only Photoshop. Images and text in the timeline move into
+                view as the user scrolls the page and the year of the mission
+                counts up from zero.
+              </p>
+            </div>
+            <div class="try-it-live">
+              <div>
+                <p>live page</p>
+                <a target="_blank" href="https://space-missions.netlify.app"
+                  ><img src="./images/icons/netlify.svg" alt=""
+                /></a>
+              </div>
+              <div>
+                <p>code</p>
+                <a
+                  target="_blank"
+                  href="https://github.com/aljaz-ferenc/space-missions"
+                  ><img
+                  src="./images/icons/github-original-wordmark.svg"
+                  alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="work__image">
+            <img src="./images/responsive/space3770.png" alt="" />
+          </div>
+        </article>
+      </section>
+      <section class="tools container">
+        <h3 class="tools__header">Tools I use for my development process</h3>
+        <ul class="tools__list">
+          <li class="tools__image">
+            <img src="./images/tools/vscode-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/html5-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/css3-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/sass-original.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/javascript-original.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/npm-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/git-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/github-original-wordmark.svg" />
+          </li>
+          <li class="tools__image">
+            <img src="./images/tools/photoshop-plain.svg" />
+          </li>
+          <li class="tools__image">
+            <p>More coming soon...</p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <form></form>
+      </section>
+    </main>
+  </body>
+</html>

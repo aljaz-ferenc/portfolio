@@ -1,0 +1,44 @@
+.work {
+  @include flex-col;
+  margin: 5rem auto;
+  gap: 8rem;
+  article {
+    @include grid;
+    height: 100vh;
+  }
+  &__text {
+    @include flex-col;
+    gap: 2rem;
+    width: 90%;
+    font-size: 2rem;
+    h3 {
+      font-family: "Montserrat Subrayada", sans-serif;
+    }
+  }
+  &__image {
+    width: 90%;
+    img {
+      width: 100%;
+    }
+  }
+  .how-it-works {
+    @include flex-col;
+    font-size: 1.6rem;
+    gap: 2rem;
+    letter-spacing: 0.5px;
+  }
+  .try-it-live {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+    font-size: 1.6rem;
+    font-style: italic;
+    img {
+      height: 5rem;
+    }
+    div {
+      @include flex-col;
+      align-items: center;
+    }
+  }
+}
