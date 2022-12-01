@@ -15,8 +15,16 @@ body {
   font-size: 2rem;
   color: #444;
   font-family: "Dosis", sans-serif;
-  padding: 2rem;
   background-color: #ddd;
+}
+
+::selection {
+  background-color: burlywood;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: burlywood;
+  color:#fff;
 }
 
 .container {

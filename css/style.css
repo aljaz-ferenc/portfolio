@@ -14,8 +14,15 @@ body {
   font-size: 2rem;
   color: #444;
   font-family: "Dosis", sans-serif;
-  padding: 2rem;
   background-color: #ddd; }
+
+::selection {
+  background-color: burlywood;
+  color: #fff; }
+
+::-moz-selection {
+  background-color: burlywood;
+  color: #fff; }
 
 .container {
   max-width: 1440px;
@@ -24,15 +31,30 @@ body {
 .grid-width {
   max-width: 90%; }
 
-.menu {
+.nav {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-between; }
-  .menu li {
+  justify-content: center;
+  position: fixed;
+  background-color: #eee;
+  width: 100%;
+  padding: 2rem;
+  z-index: 1;
+  transition: transform .3s;
+  gap: 20rem; }
+  .nav li {
     list-style: none; }
-    .menu li a {
+    .nav li a {
       text-decoration: none;
       color: black;
       font-size: inherit; }
+  .nav::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    bottom: 0;
+    background-color: #ddd; }
 
 .hero {
   max-width: 90%;
@@ -66,6 +88,23 @@ body {
     width: 90%; }
     .hero__image img {
       width: 100%; }
+  .hero .down-arrow {
+    padding: 1rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    animation: arrow 2s infinite; }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0); }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateY(100%);
+    opacity: 0; } }
 
 .work {
   display: flex;
@@ -76,6 +115,8 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: 0 auto;
     height: 100vh; }
   .work__text {
     display: flex;
@@ -88,7 +129,8 @@ body {
   .work__image {
     width: 90%; }
     .work__image img {
-      width: 100%; }
+      width: 100%;
+      filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5)); }
   .work .how-it-works {
     display: flex;
     flex-direction: column;
@@ -102,20 +144,74 @@ body {
     font-size: 1.6rem;
     font-style: italic; }
     .work .try-it-live img {
-      height: 5rem; }
+      height: 5rem;
+      transition: all .2s; }
+      .work .try-it-live img:hover {
+        position: relative;
+        transform: translateY(-3px); }
     .work .try-it-live div {
       display: flex;
       flex-direction: column;
       align-items: center; }
 
-.tools__header {
-  margin-bottom: 5rem; }
+.tools {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 10rem auto;
+  max-width: 90%; }
+  .tools__heading {
+    margin-bottom: 5rem; }
+  .tools ul {
+    display: flex;
+    gap: 5%; }
+    .tools ul li {
+      list-style: none; }
+      .tools ul li:last-child {
+        display: flex;
+        align-items: center;
+        font-style: italic; }
+  .tools__image {
+    width: 100%; }
 
-.tools ul {
+.contact {
+  font-size: 1.6rem;
+  margin: 10rem auto;
+  max-width: 50rem;
   display: flex;
-  gap: 5%; }
-  .tools ul li {
-    list-style: none; }
-
-.tools__image {
-  width: 100%; }
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  background-color: #eee;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); }
+  .contact div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .contact div label {
+      transform: translateY(110%);
+      transition: transform .3s;
+      cursor: text;
+      padding: 0 .5rem; }
+    .contact div .input, .contact div textarea {
+      width: 35rem;
+      height: max-content;
+      border: none;
+      background-color: #fff;
+      outline: none;
+      cursor: text;
+      font-size: 1.6rem;
+      padding: .5rem; }
+      .contact div .input:focus, .contact div textarea:focus {
+        outline: 1px solid rgba(0, 0, 0, 0.3); }
+    .contact div .input:not(:last-child) {
+      height: 2.5rem; }
+    .contact div .submit {
+      width: 100%;
+      font-family: inherit;
+      text-transform: uppercase;
+      padding: 1rem 3rem; }
+    .contact div span {
+      color: red; }

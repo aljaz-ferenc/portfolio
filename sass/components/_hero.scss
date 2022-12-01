@@ -1,10 +1,8 @@
 .hero {
-  // display: grid;
-  // place-items: center;
-  // grid-template-columns: repeat(2, 1fr);
   max-width: 90%;
   height: 95vh;
   margin: 0 auto;
+  // background-color: rgb(144, 194, 144);
   &__about {
     left: 50%;
     position: absolute;
@@ -39,5 +37,27 @@
     img {
       width: 100%;
     }
+  }
+  .down-arrow{
+    padding: 1rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+      display: inline-block;
+      animation: arrow 2s infinite;
+  }
+}
+
+@keyframes arrow{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0;
   }
 }
