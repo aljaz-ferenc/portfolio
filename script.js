@@ -25,7 +25,7 @@ workLink.addEventListener('click', () => gsap.to(window, { duration: 1, scrollTo
 contactLink.addEventListener('click', () => gsap.to(window, { duration: 1, scrollTo: contactSection }))
 
 inputs.forEach(input => {
-    input.addEventListener('click', (e) => {
+    input.addEventListener('focus', (e) => {
         input.previousElementSibling.style.transform = 'translate(0)'
     })
 })

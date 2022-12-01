@@ -2,14 +2,17 @@
   text-align: center;
   font-size: 1.6rem;
   margin: 10rem auto;
-  max-width: 90%;
+  max-width: 80%;
   &__heading {
     margin-bottom: 5rem;
   }
   ul {
-    display: flex;
-    gap: 5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 2%;
     li {
+      max-width: 5rem;
       list-style: none;
       &:last-child{
         display: flex;

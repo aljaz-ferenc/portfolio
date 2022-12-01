@@ -2,7 +2,6 @@
   max-width: 90%;
   height: 95vh;
   margin: 0 auto;
-  // background-color: rgb(144, 194, 144);
   &__about {
     left: 50%;
     position: absolute;
@@ -39,8 +38,9 @@
     }
   }
   .down-arrow{
+    position: absolute;
     padding: 1rem;
-    bottom: 0;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -61,3 +61,5 @@
     opacity: 0;
   }
 }
+
+

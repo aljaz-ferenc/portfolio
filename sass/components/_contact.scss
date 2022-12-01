@@ -11,7 +11,7 @@
     background-color: #eee;
     box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: .3);
     div{
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -22,7 +22,7 @@
             padding: 0 .5rem;
         }
         .input, textarea{
-            width: 35rem;
+            width: 100%;
             height: max-content;
             border: none;
             background-color: #fff;
