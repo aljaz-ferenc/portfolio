@@ -15,6 +15,14 @@
     font-size: 2rem;
     h3 {
       font-family: "Montserrat Subrayada", sans-serif;
+      text-decoration: none;
+      color: inherit;
+      font-size: 3rem;
+    }
+    &--description{
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
     }
   }
   &__image {
@@ -32,22 +40,34 @@
     letter-spacing: 0.5px;
   }
   .try-it-live {
+    margin-top: 2rem;
     display: flex;
     justify-content: flex-start;
     gap: 10rem;
     font-size: 1.6rem;
-    font-style: italic;
     img {
       height: 5rem;
       transition: all .2s;
       &:hover{
-        position: relative;
-        transform: translateY(-3px);
+        animation: wiggle .3s 1 backwards ease-in-out;
+        transform: translateY(-2px);
       }
     }
     div {
       @include flex-col;
       align-items: center;
     }
+  }
+}
+
+@keyframes wiggle{
+  33%{
+    rotate: 5deg;
+  }
+  66%{
+    rotate: -5deg;
+  }
+  100%{
+    rotate: 0;
   }
 }

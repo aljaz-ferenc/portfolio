@@ -15,16 +15,23 @@
       font-family: "Great Vibes", cursive;
       font-size: 10rem;
       min-width: max-content;
+      animation: come-in 3s forwards;
+      color: #333;
+      opacity: 0;
     }
     h2 {
       font-family: "Montserrat Subrayada", sans-serif;
       font-size: 5rem;
       min-width: max-content;
+      animation: drop-down .5s 2s forwards;
+      opacity: 0;
     }
     p {
       max-width: 90rem;
       font-size: inherit;
       line-height: 1.5;
+      opacity: 0;
+      animation: display-text 2s 3s forwards;
       svg {
         height: 1rem;
         margin-left: 2rem;
@@ -43,9 +50,41 @@
     bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
     position: absolute;
-      display: inline-block;
-      animation: arrow 2s infinite;
+    display: inline-block;
+    animation: arrow 2s 4s infinite;
+  }
+}
+
+@keyframes come-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes drop-down{
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes display-text{
+  from{
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

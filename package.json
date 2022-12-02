@@ -4,11 +4,14 @@
   "description": "My personal frontend portfolio site.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "Aljaž Ferenc",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "parcel-bundler": "^1.12.5"
   }
 }

@@ -5,17 +5,47 @@
   width: 100%;
   justify-content:space-between;
   position: fixed;
-  background-color: #eee;
+  background-color: #ddd;
   padding: 2rem 20%;
   z-index: 1;  
   transition: transform .3s;
-
   li {
     list-style: none;
+    overflow-x: hidden;
     a {
       text-decoration: none;
-      color: black;
-      font-size: inherit;
+      color: inherit;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2.5rem;
+      position: relative;
+      &::before{
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: currentColor;
+        top: 0;
+        left: -100%;
+        transition: all .3s;
+      }
+      &::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: currentColor;
+        left: 100%;
+        bottom: 0;
+        transition: all .3s;
+      }
+      &:hover{
+        &::before{
+          left: 0;
+        }
+        &::after{
+          left: 0;
+        }
+      } 
     }
   }
   &::after{
@@ -26,5 +56,8 @@
     bottom: 0;
     background-color: #ddd;
   }
+}
 
+strong, span, h2{
+  color: rgb(115, 1, 1) !important;
 }

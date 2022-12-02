@@ -13,7 +13,7 @@ html {
 
 body {
   font-size: 2rem;
-  color: #444;
+  color: $color-text;
   font-family: "Dosis", sans-serif;
   background-color: #ddd;
 }
@@ -36,4 +36,3 @@ body {
   max-width: 90%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
