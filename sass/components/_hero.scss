@@ -7,8 +7,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     gap: 3rem;
     text-align: justify;
     h1 {
@@ -56,49 +55,3 @@
     animation: arrow 2s 4s infinite;
   }
 }
-
-@keyframes come-in{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
-@keyframes drop-down{
-  from{
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes display-text{
-  from{
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes arrow{
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-
-

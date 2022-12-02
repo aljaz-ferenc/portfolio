@@ -4,7 +4,8 @@
   margin: 10rem auto;
   max-width: 80%;
   &__heading {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+    font-size: 2.5rem;
   }
   ul {
     margin: 0 auto;
@@ -12,7 +13,7 @@
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     gap: 2%;
     li {
-      max-width: 5rem;
+      max-width: 13rem;
       list-style: none;
       &:last-child{
         display: flex;

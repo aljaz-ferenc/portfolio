@@ -59,15 +59,3 @@
     }
   }
 }
-
-@keyframes wiggle{
-  33%{
-    rotate: 5deg;
-  }
-  66%{
-    rotate: -5deg;
-  }
-  100%{
-    rotate: 0;
-  }
-}

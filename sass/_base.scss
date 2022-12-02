@@ -15,15 +15,15 @@ body {
   font-size: 2rem;
   color: $color-text;
   font-family: "Dosis", sans-serif;
-  background-color: #ddd;
+  background-color: $color-background;
 }
 
 ::selection {
-  background-color: burlywood;
+  background-color: $color-accent;
   color: #fff;
 }
 ::-moz-selection {
-  background-color: burlywood;
+  background-color: $color-accent;
   color:#fff;
 }
 
@@ -36,3 +36,6 @@ body {
   max-width: 90%;
 }
 
+strong, span, h2{
+  color: $color-accent;
+}

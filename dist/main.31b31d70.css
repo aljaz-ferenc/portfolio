@@ -16,11 +16,11 @@ body {
   background-color: #ddd; }
 
 ::selection {
-  background-color: burlywood;
+  background-color: #730101;
   color: #fff; }
 
 ::-moz-selection {
-  background-color: burlywood;
+  background-color: #730101;
   color: #fff; }
 
 .container {
@@ -29,6 +29,9 @@ body {
 
 .grid-width {
   max-width: 90%; }
+
+strong, span, h2 {
+  color: #730101; }
 
 .nav {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -79,9 +82,6 @@ body {
     bottom: 0;
     background-color: #ddd; }
 
-strong, span, h2 {
-  color: #730101 !important; }
-
 .hero {
   max-width: 90%;
   height: 95vh;
@@ -131,37 +131,6 @@ strong, span, h2 {
     position: absolute;
     display: inline-block;
     animation: arrow 2s 4s infinite; }
-
-@keyframes come-in {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@keyframes drop-down {
-  from {
-    opacity: 0;
-    transform: translateY(-100%); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@keyframes display-text {
-  from {
-    opacity: 0;
-    transform: translateY(2rem); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@keyframes arrow {
-  0% {
-    transform: translateY(0); }
-  50% {
-    opacity: 1; }
-  100% {
-    transform: translateY(100%);
-    opacity: 0; } }
 
 .work {
   display: flex;
@@ -219,28 +188,21 @@ strong, span, h2 {
       flex-direction: column;
       align-items: center; }
 
-@keyframes wiggle {
-  33% {
-    rotate: 5deg; }
-  66% {
-    rotate: -5deg; }
-  100% {
-    rotate: 0; } }
-
 .tools {
   text-align: center;
   font-size: 1.6rem;
   margin: 10rem auto;
   max-width: 80%; }
   .tools__heading {
-    margin-bottom: 5rem; }
+    margin-bottom: 10rem;
+    font-size: 2.5rem; }
   .tools ul {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     gap: 2%; }
     .tools ul li {
-      max-width: 5rem;
+      max-width: 13rem;
       list-style: none; }
       .tools ul li:last-child {
         display: flex;
@@ -279,7 +241,8 @@ strong, span, h2 {
       outline: none;
       cursor: text;
       font-size: 1.6rem;
-      padding: .5rem; }
+      padding: .5rem;
+      font-family: 'Segoe UI', sans-serif; }
       .contact div .input:focus, .contact div textarea:focus {
         outline: 1px solid rgba(0, 0, 0, 0.3); }
     .contact div .input:not(:last-child) {
@@ -290,7 +253,7 @@ strong, span, h2 {
       text-transform: uppercase;
       padding: 1rem 3rem; }
     .contact div span {
-      color: red; }
+      color: #730101; }
 
 @media only screen and (max-width: 1200px) {
   .work .work__image {
@@ -351,6 +314,45 @@ strong, span, h2 {
   .contact {
     max-width: 90%;
     gap: .5rem; } }
+
+@keyframes wiggle {
+  33% {
+    rotate: 5deg; }
+  66% {
+    rotate: -5deg; }
+  100% {
+    rotate: 0; } }
+
+@keyframes come-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes drop-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes display-text {
+  from {
+    opacity: 0;
+    transform: translateY(2rem); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0); }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateY(100%);
+    opacity: 0; } }
 
 
 /*# sourceMappingURL=/main.31b31d70.css.map */
