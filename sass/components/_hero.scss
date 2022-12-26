@@ -2,6 +2,9 @@
   max-width: 90%;
   height: 95vh;
   margin: 0 auto;
+  &__name{
+    animation: fill .5s ease forwards 3.5s;
+  }
   &__about {
     left: 50%;
     position: absolute;
@@ -53,5 +56,54 @@
     position: absolute;
     display: inline-block;
     animation: arrow 2s 4s infinite;
+  }
+}
+
+.path:nth-child(1){
+  @include stroke(876px, 0s)
+}
+.path:nth-child(2){
+  @include stroke(314px, .2s)
+}
+.path:nth-child(3){
+  @include stroke(295px, .4s)
+}
+.path:nth-child(4){
+  @include stroke(265px, .6s)
+}
+.path:nth-child(5){
+  @include stroke(277px, .8s)
+}
+.path:nth-child(6){
+  @include stroke(623px, 1s)
+}
+.path:nth-child(7){
+  @include stroke(193px, 1.2s)
+}
+.path:nth-child(8){
+  @include stroke(166px, 1.4s)
+}
+.path:nth-child(9){
+  @include stroke(193px, 1.6s)
+}
+.path:nth-child(10){
+  @include stroke(270px, 1.8s)
+}
+.path:nth-child(11){
+  @include stroke(162px, 2s)
+}
+
+@keyframes animate-name{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: $color-text;
   }
 }

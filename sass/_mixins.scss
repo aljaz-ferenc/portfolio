@@ -8,3 +8,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin stroke ($stroke-length, $delay) {
+  stroke-dasharray: $stroke-length;
+  stroke-dashoffset: $stroke-length;
+  animation: animate-name 2s ease forwards $delay;
+}

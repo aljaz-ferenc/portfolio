@@ -29,5 +29,3 @@ inputs.forEach(input => {
         input.previousElementSibling.style.transform = 'translate(0)'
     })
 })
-
-
