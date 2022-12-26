@@ -97,13 +97,9 @@ strong, span, h2 {
     flex-direction: column;
     gap: 3rem;
     text-align: justify; }
-    .hero__about h1 {
-      font-family: "Great Vibes", cursive;
-      font-size: 10rem;
-      min-width: max-content;
-      animation: come-in 3s forwards;
-      color: #333;
-      opacity: 0; }
+    .hero__about svg {
+      width: 80%;
+      height: 100%; }
     .hero__about h2 {
       font-family: "Montserrat Subrayada", sans-serif;
       font-size: 5rem;

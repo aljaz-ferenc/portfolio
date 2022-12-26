@@ -13,13 +13,9 @@
     @include flex-col;
     gap: 3rem;
     text-align: justify;
-    h1 {
-      font-family: "Great Vibes", cursive;
-      font-size: 10rem;
-      min-width: max-content;
-      animation: come-in 3s forwards;
-      color: #333;
-      opacity: 0;
+    svg{
+      width: 80%;
+      height: 100%;
     }
     h2 {
       font-family: "Montserrat Subrayada", sans-serif;
