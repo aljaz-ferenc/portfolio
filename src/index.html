@@ -72,9 +72,65 @@
           <span class="down-arrow">&darr;</span>
         </div>
       </section>
+      <hr />
+      </div>
       <section class="work">
-        <hr />
-
+        <article>
+          <div class="work__text">
+            <h3 class="work__text--header">Speed Typing App</h3>
+            <p class="work__text--description">
+              Challenge yourself and test your blind typing skills.
+            </p>
+            <div class="how-it-works">
+              <p>
+                <strong>Speed Typing App</strong> is written in <strong>React</strong> and it allows users to test their blind typing skills.
+              </p>
+              <p>
+                The user can choose the number of words and the app will fetch random words from <strong>random-word-api.herokuapp.com </strong>. The timer starts running when the users starts typing. The user's input is constantly being checked and the game stops when every input letter is correct or the user makes a mistake. If the users succeeds, the timer stops and the average speed is calculated.
+              </p>
+              <p>
+                Building this app helped me solidify my React knowledge I already had, and I also learned about new <strong>hooks, conditional rendering based on state, using loading animations</strong> and <strong> React Portals</strong>.
+              </p>
+            </div>
+            <div class="try-it-live">
+              <div>
+                <p>live page:</p>
+                <a
+                  target="_blank"
+                  href="https://speed-type-af.netlify.app/"
+                  ><img src="../images/icons/netlify.svg" alt="netlify link"
+                /></a>
+              </div>
+              <div>
+                <p>code:</p>
+                <a
+                  target="_blank"
+                  href="https://github.com/aljaz-ferenc/speed-type"
+                  ><img
+                    src="../images/icons/github-original-wordmark.svg"
+                    alt="github link"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="work__image">
+            <picture>
+              <source
+                media="(max-width:420px)"
+                srcset="../images/responsive/speed-type/speed-type600.webp"
+              />
+              <source
+                media="(max-width:1385px)"
+                srcset="../images/responsive/speed-type/speed-type1000.webp"
+              />
+              <img
+              srcset="../images/responsive/speed-type/speed-type1600.webp"
+                alt="speed typing app"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </article>
         <article>
           <div class="work__text">
             <h3 class="work__text--header">Weather Dashboard App</h3>
@@ -138,7 +194,6 @@
             </picture>
           </div>
         </article>
-
         <hr />
         <article>
           <div class="work__text">
