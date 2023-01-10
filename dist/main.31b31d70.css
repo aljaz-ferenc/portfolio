@@ -266,8 +266,7 @@ strong, span, h2 {
     gap: 3%; }
     .tools ul li {
       max-width: 13rem;
-      list-style: none;
-      filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5)); }
+      list-style: none; }
       .tools ul li:last-child {
         display: flex;
         align-items: center;
